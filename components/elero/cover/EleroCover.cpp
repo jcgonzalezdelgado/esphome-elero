@@ -185,6 +185,7 @@ void EleroCover::control(const cover::CoverCall &call) {
       this->commands_to_send_.push(this->command_tilt_);
       this->tilt = 1.0;
     } else {
+      this->commands_to_send_.push(this->command_tilt_);
       this->tilt = 0.0;
     }
   }
